@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileSystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -50,7 +51,11 @@ public class Base {
 		
 		try {
 			
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\properties\\config.properties");
+			//fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\properties\\config.properties");
+			if(System.getProperty("os.name").contains("Linux")){
+				fis = new FileInputStream("//src//test//resources//com//properties//config.properties");
+			}
+			fis = new FileInputStream("\\src\\test\\resources\\com\\properties\\config.properties");
 			prop.load(fis);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
