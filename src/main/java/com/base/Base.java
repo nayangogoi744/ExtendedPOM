@@ -52,7 +52,7 @@ public class Base {
 		try {
 			
 			//fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\properties\\config.properties");
-			if(System.getProperty("os.name").contains("Linux")){
+			if(System.getProperty("os.name").contains("Ubuntu")){
 				fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//com//properties//config.properties");
 			}
 			fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\properties\\config.properties");
