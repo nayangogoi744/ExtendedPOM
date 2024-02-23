@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="1"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="95.588">
+  <properties />
+  
+  
+            <testcase name="loginWithValidCredentials" time="18.196" classname="testcases.RegisterValidUserTest" />
+                <testcase name="performSignUp" time="43.420" classname="testcases.RegisterValidUserTest" />
+                <testcase name="logoutTest" time="32.084" classname="testcases.RegisterValidUserTest" />
+                <testcase name="performSignUpWithExistingEmail" time="1.888" classname="testcases.RegisterValidUserTest" />
+      
+</testsuite>

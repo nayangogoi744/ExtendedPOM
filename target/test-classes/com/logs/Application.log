@@ -1,0 +1,178 @@
+[INFO ] 2024-02-23 15:50:06.620 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (c0e21f66d3e3ac5e0c36181a6e2fe700)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 15:50:06.702 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (c0e21f66d3e3ac5e0c36181a6e2fe700)] -> xpath: //input[@data-qa='signup-name']]
+[INFO ] 2024-02-23 15:50:06.754 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (c0e21f66d3e3ac5e0c36181a6e2fe700)] -> xpath: //input[@data-qa='signup-email']]
+[INFO ] 2024-02-23 15:50:07.605 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (c0e21f66d3e3ac5e0c36181a6e2fe700)] -> xpath: //button[@data-qa='signup-button']]
+[INFO ] 2024-02-23 15:50:14.646 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (c54c1713ebbebe056ef66b03b20fbfe9)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 15:50:14.717 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (c54c1713ebbebe056ef66b03b20fbfe9)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 15:50:14.763 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (c54c1713ebbebe056ef66b03b20fbfe9)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 15:50:27.930 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 15:50:35.432 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (b9eda8c5ceb4e2cec4f570cc353eebfd)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 15:50:35.502 [main] Base -
+					Typed nayangogoi@gmail.com in the textbox[[ChromeDriver: chrome on windows (b9eda8c5ceb4e2cec4f570cc353eebfd)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 15:50:35.545 [main] Base -
+					Typed nayan123 in the textbox[[ChromeDriver: chrome on windows (b9eda8c5ceb4e2cec4f570cc353eebfd)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 15:50:36.450 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (b9eda8c5ceb4e2cec4f570cc353eebfd)] -> xpath: //button[@data-qa='login-button']]
+[INFO ] 2024-02-23 16:34:20.059 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (12f3c5777799c17e32c939ceef244bfe)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:34:20.142 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (12f3c5777799c17e32c939ceef244bfe)] -> xpath: //input[@data-qa='signup-name']]
+[INFO ] 2024-02-23 16:34:20.191 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (12f3c5777799c17e32c939ceef244bfe)] -> xpath: //input[@data-qa='signup-email']]
+[INFO ] 2024-02-23 16:34:21.134 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (12f3c5777799c17e32c939ceef244bfe)] -> xpath: //button[@data-qa='signup-button']]
+[INFO ] 2024-02-23 16:34:35.106 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (6319fcbaab9af35be905febf560a5ec5)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:34:35.179 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (6319fcbaab9af35be905febf560a5ec5)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 16:34:35.227 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (6319fcbaab9af35be905febf560a5ec5)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 16:34:53.095 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 16:35:02.242 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (92988b37459f5f903ee6c4dcbafe1216)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:35:02.311 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (92988b37459f5f903ee6c4dcbafe1216)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 16:35:02.357 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (92988b37459f5f903ee6c4dcbafe1216)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 16:35:20.650 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 16:35:33.012 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/logout']'
+[INFO ] 2024-02-23 16:35:46.183 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (c6d02444d7ea7a5a8fdb175990738c01)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:35:46.253 [main] Base -
+					Typed nayangogoi@gmail.com in the textbox[[ChromeDriver: chrome on windows (c6d02444d7ea7a5a8fdb175990738c01)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 16:35:46.301 [main] Base -
+					Typed nayan123 in the textbox[[ChromeDriver: chrome on windows (c6d02444d7ea7a5a8fdb175990738c01)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 16:35:47.181 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (c6d02444d7ea7a5a8fdb175990738c01)] -> xpath: //button[@data-qa='login-button']]
+[INFO ] 2024-02-23 16:55:21.018 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (96a9f9b793f481ecf861654caa42b8a8)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:55:21.100 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (96a9f9b793f481ecf861654caa42b8a8)] -> xpath: //input[@data-qa='signup-name']]
+[INFO ] 2024-02-23 16:55:21.154 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (96a9f9b793f481ecf861654caa42b8a8)] -> xpath: //input[@data-qa='signup-email']]
+[INFO ] 2024-02-23 16:55:22.068 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (96a9f9b793f481ecf861654caa42b8a8)] -> xpath: //button[@data-qa='signup-button']]
+[INFO ] 2024-02-23 16:55:29.963 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (87698d6d3e1e45049e932ec3355f0411)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:55:30.040 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (87698d6d3e1e45049e932ec3355f0411)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 16:55:30.096 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (87698d6d3e1e45049e932ec3355f0411)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 16:55:45.200 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 16:55:53.741 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (9e99d644b46d622816ca6b8e280f21fc)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:55:53.813 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (9e99d644b46d622816ca6b8e280f21fc)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 16:55:53.856 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (9e99d644b46d622816ca6b8e280f21fc)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 16:56:08.350 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 16:56:20.251 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/logout']'
+[INFO ] 2024-02-23 16:56:28.858 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (e146caddb4793474c4da598e30a458e8)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:56:28.926 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (e146caddb4793474c4da598e30a458e8)] -> xpath: //input[@data-qa='signup-name']]
+[INFO ] 2024-02-23 16:56:28.974 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (e146caddb4793474c4da598e30a458e8)] -> xpath: //input[@data-qa='signup-email']]
+[INFO ] 2024-02-23 16:56:29.825 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (e146caddb4793474c4da598e30a458e8)] -> xpath: //button[@data-qa='signup-button']]
+[INFO ] 2024-02-23 16:56:38.418 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (2514ff304364ad5ec014e9b398b05b48)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:56:38.487 [main] Base -
+					Typed nayangogoi@gmail.com in the textbox[[ChromeDriver: chrome on windows (2514ff304364ad5ec014e9b398b05b48)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 16:56:38.530 [main] Base -
+					Typed nayan123 in the textbox[[ChromeDriver: chrome on windows (2514ff304364ad5ec014e9b398b05b48)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 16:56:39.596 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (2514ff304364ad5ec014e9b398b05b48)] -> xpath: //button[@data-qa='login-button']]
+[INFO ] 2024-02-23 16:59:48.511 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 16:59:48.598 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> xpath: //input[@data-qa='signup-name']]
+[INFO ] 2024-02-23 16:59:48.650 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> xpath: //input[@data-qa='signup-email']]
+[INFO ] 2024-02-23 16:59:59.591 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='signup-button']'
+[INFO ] 2024-02-23 16:59:59.962 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: password]
+[INFO ] 2024-02-23 17:00:00.069 [main] Base -
+					Selecting the 15from[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: days]
+[INFO ] 2024-02-23 17:00:00.152 [main] Base -
+					Selecting the Julyfrom[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: months]
+[INFO ] 2024-02-23 17:00:00.243 [main] Base -
+					Selecting the 1991from[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: years]
+[INFO ] 2024-02-23 17:00:00.289 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: newsletter]
+[INFO ] 2024-02-23 17:00:00.332 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: optin]
+[INFO ] 2024-02-23 17:00:00.391 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: first_name]
+[INFO ] 2024-02-23 17:00:00.442 [main] Base -
+					Typed Gogoi in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: last_name]
+[INFO ] 2024-02-23 17:00:00.493 [main] Base -
+					Typed DemoCompany in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: company]
+[INFO ] 2024-02-23 17:00:00.543 [main] Base -
+					Typed Borholla in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: address1]
+[INFO ] 2024-02-23 17:00:00.592 [main] Base -
+					Typed Mohimabari in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: address2]
+[INFO ] 2024-02-23 17:00:00.654 [main] Base -
+					Selecting the Indiafrom[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: country]
+[INFO ] 2024-02-23 17:00:00.697 [main] Base -
+					Typed Assam in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: state]
+[INFO ] 2024-02-23 17:00:00.745 [main] Base -
+					Typed Golaghat in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: city]
+[INFO ] 2024-02-23 17:00:00.796 [main] Base -
+					Typed 785462 in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: zipcode]
+[INFO ] 2024-02-23 17:00:00.842 [main] Base -
+					Typed 7788665544 in the textbox[[ChromeDriver: chrome on windows (1bf035d11e457852fc7e8d8289dfa980)] -> id: mobile_number]
+[INFO ] 2024-02-23 17:00:13.783 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='create-account']'
+[INFO ] 2024-02-23 17:00:30.994 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //a[@data-qa='continue-button']'
+[INFO ] 2024-02-23 17:00:41.851 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (45609b328b36688f4103b6ba42060e97)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 17:00:41.947 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (45609b328b36688f4103b6ba42060e97)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 17:00:41.991 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (45609b328b36688f4103b6ba42060e97)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 17:00:59.117 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 17:01:08.813 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (96436a862f12aa3aa3c0b0e86a7302d4)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 17:01:08.882 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (96436a862f12aa3aa3c0b0e86a7302d4)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 17:01:08.931 [main] Base -
+					Typed manage123 in the textbox[[ChromeDriver: chrome on windows (96436a862f12aa3aa3c0b0e86a7302d4)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 17:01:27.173 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+[INFO ] 2024-02-23 17:01:39.492 [main] Base -
+					Clicked the link Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/logout']'
+[INFO ] 2024-02-23 17:01:46.838 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (aa3eb139d3e9a93542ab9ae3a1077b28)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 17:01:46.908 [main] Base -
+					Typed Nayan in the textbox[[ChromeDriver: chrome on windows (aa3eb139d3e9a93542ab9ae3a1077b28)] -> xpath: //input[@data-qa='signup-name']]
+[INFO ] 2024-02-23 17:01:46.953 [main] Base -
+					Typed nayangogoi744@gmail.com in the textbox[[ChromeDriver: chrome on windows (aa3eb139d3e9a93542ab9ae3a1077b28)] -> xpath: //input[@data-qa='signup-email']]
+[INFO ] 2024-02-23 17:01:47.819 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (aa3eb139d3e9a93542ab9ae3a1077b28)] -> xpath: //button[@data-qa='signup-button']]
+[INFO ] 2024-02-23 17:01:54.692 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (84287a5c5445222440bb5af0d9dbe5b1)] -> xpath: //a[@href='/login']]
+[INFO ] 2024-02-23 17:01:54.760 [main] Base -
+					Typed nayangogoi@gmail.com in the textbox[[ChromeDriver: chrome on windows (84287a5c5445222440bb5af0d9dbe5b1)] -> xpath: //input[@data-qa='login-email']]
+[INFO ] 2024-02-23 17:01:54.806 [main] Base -
+					Typed nayan123 in the textbox[[ChromeDriver: chrome on windows (84287a5c5445222440bb5af0d9dbe5b1)] -> xpath: //input[@data-qa='login-password']]
+[INFO ] 2024-02-23 17:01:56.081 [main] Base -
+					Clicked the link [[ChromeDriver: chrome on windows (84287a5c5445222440bb5af0d9dbe5b1)] -> xpath: //button[@data-qa='login-button']]
