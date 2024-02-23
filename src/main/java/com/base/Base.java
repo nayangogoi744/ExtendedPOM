@@ -55,7 +55,7 @@ public class Base {
 			if(System.getProperty("os.name").contains("Linux")){
 				fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//com//properties//config.properties");
 			}
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\properties\\config.properties");
+			fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//com//properties//config.properties");
 			prop.load(fis);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
