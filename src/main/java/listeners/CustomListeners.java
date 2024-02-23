@@ -15,45 +15,43 @@ import com.base.Base;
 
 import utilities.TestUtil;
 
-public class CustomListeners extends Base implements ITestListener,ISuiteListener{
+public class CustomListeners extends Base implements ITestListener, ISuiteListener {
 
-	//ExtentTest test;
-	//ExtentReports extent = ExtentManager.getInstance();
+	// ExtentTest test;
+	// ExtentReports extent = ExtentManager.getInstance();
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 	public static ExtentTest test;
+
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getName());
 		extentTest.set(test);
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		
-		extentTest.get().log(Status.PASS,result.getName() +" PASS");
-				
-		
-		
-				
+
+		extentTest.get().log(Status.PASS, result.getName() + " PASS");
+
 	}
 
 	public void onTestFailure(ITestResult result) {
-		 System.setProperty("org.uncommons.reportng.escape-output","false");
-		 try {
-			 Object currentInstance = result.getInstance();
+		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		try {
+			Object currentInstance = result.getInstance();
 			TestUtil.captureScreenShot(currentInstance);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		  extentTest.get().log(Status.FAIL,result.getName() +" FAILED");
-		  extentTest.get().fail(result.getThrowable());
-		  extentTest.get().addScreenCaptureFromPath(TestUtil.screenShotName, result.getMethod().getMethodName());
-		  
-		  
-		 Reporter.log("<a href=\""+TestUtil.screenShotName+" \"target=\"_blank\">Screenshot</a>");
-		 Reporter.log("<br>");
-		 Reporter.log("<a href=\""+TestUtil.screenShotName+" \"target=\"_blank\"><img src=\""+TestUtil.screenShotName+" \"height=200 width=200 ></img></a>");
-			
+
+		extentTest.get().log(Status.FAIL, result.getName() + " FAILED");
+		extentTest.get().fail(result.getThrowable());
+		extentTest.get().addScreenCaptureFromPath(TestUtil.screenShotName, result.getMethod().getMethodName());
+
+		Reporter.log("<a href=\"" + TestUtil.screenShotName + " \"target=\"_blank\">Screenshot</a>");
+		Reporter.log("<br>");
+		Reporter.log("<a href=\"" + TestUtil.screenShotName + " \"target=\"_blank\"><img src=\""
+				+ TestUtil.screenShotName + " \"height=200 width=200 ></img></a>");
+
 	}
 
 	@Override
@@ -75,21 +73,20 @@ public class CustomListeners extends Base implements ITestListener,ISuiteListene
 //			e.printStackTrace();
 //		}
 
-		
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		extentTest.get().log(Status.SKIP,result.getName() +" SKIPPED");
+		extentTest.get().log(Status.SKIP, result.getName() + " SKIPPED");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onTestFailedWithTimeout(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onStart(ITestContext context) {
@@ -97,8 +94,7 @@ public class CustomListeners extends Base implements ITestListener,ISuiteListene
 	}
 
 	public void onFinish(ITestResult result) throws IOException {
-		
-		
+
 	}
 
 }

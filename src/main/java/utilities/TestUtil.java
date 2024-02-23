@@ -10,19 +10,19 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.base.Base;
 
-
-public class TestUtil extends Base{
+public class TestUtil extends Base {
 
 	public static String screenShotPath;
 	public static String screenShotName;
-	
-	public static void captureScreenShot(Object currentInstance) throws IOException{
-		File src = ((TakesScreenshot)((Base) currentInstance).getDriver()).getScreenshotAs(OutputType.FILE);
+
+	public static void captureScreenShot(Object currentInstance) throws IOException {
+		File src = ((TakesScreenshot) ((Base) currentInstance).getDriver()).getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
-		screenShotName=d.toString().replace(":", "_").replace(" ", "_")+".jpg";
-		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenShotName+""));
+		screenShotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+		FileUtils.copyFile(src,
+				new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\" + screenShotName + ""));
 	}
-	
+
 //	public static boolean isTestRunnable(String testName) throws IOException {
 //		String sheetName="testCasesMode";
 //		int rows = excel.getRowCount(sheetName);
@@ -47,7 +47,5 @@ public class TestUtil extends Base{
 //}
 //		return false;
 //	}
-	
 
 }
-

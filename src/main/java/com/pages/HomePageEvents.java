@@ -17,39 +17,34 @@ import com.pages.signup.SignUpSignInPageEvents;
 
 import listeners.CustomListeners;
 
+public class HomePageEvents extends TopMenu {
 
-public class HomePageEvents extends TopMenu{
-
-	@FindBy(xpath="//i[@class='fa fa-user']//ancestor::a")
+	@FindBy(xpath = "//i[@class='fa fa-user']//ancestor::a")
 	WebElement navbarUserText;
 
 	WebDriver driver;
+
 	public HomePageEvents(WebDriver driver) {
 		super(driver);
-		this.driver=driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void verifyTitle() {
-		String expected="Automation Exercise";
+		String expected = "Automation Exercise";
 		Assert.assertEquals(expected, driver.getTitle());
-		
+
 	}
-	
-	
+
 	public void verifyUserNamePresent(String username) {
-		String text="Logged in as "+username;
+		String text = "Logged in as " + username;
 		System.out.println(text);
 		System.out.println(navbarUserText.getText());
-		if(navbarUserText.getText().contains(text)) {
+		if (navbarUserText.getText().contains(text)) {
 			Assert.assertTrue(true);
-		}else {
+		} else {
 			Assert.assertTrue(false);
 		}
 	}
 
-	
-
-
-	
 }
