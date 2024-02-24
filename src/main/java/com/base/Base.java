@@ -55,7 +55,7 @@ public class Base {
 						System.getProperty("user.dir") + "//src//test//resources//com//properties//config.properties");
 			}
 			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//test//resources//com//properties//config.properties");
+					System.getProperty("user.dir") + "\\src\\test\\resources\\com\\properties\\config.properties");
 			prop.load(fis);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -71,10 +71,10 @@ public class Base {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("incognito");
-			options.addArguments("disable-extensions");
+			/*options.addArguments("disable-extensions");
 			options.addArguments("disable-popup-blocking");
 			options.addArguments("make-default-browser");
-			options.addArguments("disable-infobars");
+			options.addArguments("disable-infobars");*/
 			setDriver(new ChromeDriver(options));
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			setDriver(new FirefoxDriver());
