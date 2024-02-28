@@ -7,9 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.base.Base;
+import com.page.TopMenu;
 import com.pages.HomePageEvents;
 
-public class AccountCreatedPageEvents {
+public class AccountCreatedPageEvents extends TopMenu{
 
 	WebDriver driver;
 	@FindBy(xpath = "//h2/b")
@@ -19,13 +20,15 @@ public class AccountCreatedPageEvents {
 	WebElement continueBtn;
 
 	public AccountCreatedPageEvents(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	public void verifyAccountCreated() {
 		String expected = "ACCOUNT CREATED!";
-		Assert.assertEquals(verifyTxt.getText(), expected);
+		//Assert.assertEquals(verifyTxt.getText(), expected);
+		Base.soft.assertEquals(verifyTxt.getText(), expected);
 	}
 
 	public HomePageEvents clickContinue() {

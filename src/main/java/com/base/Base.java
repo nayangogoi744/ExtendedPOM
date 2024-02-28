@@ -18,15 +18,17 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
+import com.page.TopMenu;
 
 import listeners.CustomListeners;
 import utilities.ExcelReader;
 import utilities.ExtentManager;
 
-public class Base {
+public class Base{
 
 	public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static ExtentReports extent = ExtentManager.getInstance();
@@ -34,7 +36,8 @@ public class Base {
 	public static Logger log = LogManager.getLogger();
 	public static ExcelReader excel = new ExcelReader("\\src\\test\\resources\\com\\excel\\testdatasheet.xlsx");;
 	public static FileInputStream fis;
-
+	public static SoftAssert soft = new SoftAssert();
+	
 	public void setDriver(WebDriver driver) {
 		this.driver.set(driver);
 	}
@@ -93,6 +96,9 @@ public class Base {
 	@AfterSuite
 	public void flush() {
 		extent.flush();
+		soft.assertAll();
+	
+		
 	}
 
 	public static void click(WebElement link) {

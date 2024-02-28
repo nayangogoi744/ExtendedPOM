@@ -7,9 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.base.Base;
+import com.page.TopMenu;
 import com.pages.HomePageEvents;
 
-public class DeleteAccountPageEvents {
+public class DeleteAccountPageEvents extends TopMenu{
 
 	WebDriver driver;
 
@@ -20,6 +21,7 @@ public class DeleteAccountPageEvents {
 	WebElement continueBtn;
 
 	public DeleteAccountPageEvents(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -31,6 +33,7 @@ public class DeleteAccountPageEvents {
 
 	public void verifyTextPresent() {
 		String expected = "ACCOUNT DELETED!";
-		Assert.assertEquals(verifyText.getText(), expected);
+		//Assert.assertEquals(verifyText.getText(), expected);
+		Base.soft.assertEquals(verifyText.getText(), expected);
 	}
 }

@@ -7,9 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.base.Base;
+import com.page.TopMenu;
 import com.pages.HomePageEvents;
 
-public class SignUpSignInPageEvents {
+public class SignUpSignInPageEvents extends TopMenu{
 
 	WebDriver driver;
 
@@ -47,19 +48,22 @@ public class SignUpSignInPageEvents {
 	WebElement loginError;
 
 	public SignUpSignInPageEvents(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	public void verifySignUpTextPresent() {
 		String expected = "New User Signup!";
-		Assert.assertEquals(verifyusrSignUpText.getText(), expected);
+		//Assert.assertEquals(verifyusrSignUpText.getText(), expected);
+		Base.soft.assertEquals(verifyusrSignUpText.getText(), expected);
 	}
 
 	public void verifyLoginTextPresent() {
 		String expected = "Login to your account";
 		String actual = verifyloginText.getText();
-		Assert.assertEquals(actual, expected);
+		//Assert.assertEquals(actual, expected);
+		Base.soft.assertEquals(actual, expected);
 	}
 
 	public AccountInformationPageEvents signUp(String name, String email) {
@@ -75,12 +79,14 @@ public class SignUpSignInPageEvents {
 
 	public void verifySignUpError() {
 		String expected = "Email Address already exist!";
-		Assert.assertEquals(signupError.getText(), expected);
+		//Assert.assertEquals(signupError.getText(), expected);
+		Base.soft.assertEquals(signupError.getText(), expected);
 	}
 
 	public void verifyLoginError() {
 		String expected = "Your email or password is incorrect!";
-		Assert.assertEquals(expected, loginError.getText());
+		//Assert.assertEquals(expected, loginError.getText());
+		Base.soft.assertEquals(expected, loginError.getText());
 
 	}
 

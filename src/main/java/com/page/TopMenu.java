@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.asserts.SoftAssert;
 
 import com.base.Base;
 import com.pages.CartPageEvents;
@@ -18,6 +19,7 @@ import com.pages.signup.SignUpSignInPageEvents;
 public class TopMenu {
 
 	WebDriver driver;
+
 
 	@FindBy(xpath = "//a[contains(text(),' Home')]")
 	WebElement homePageLink;
@@ -65,13 +67,13 @@ public class TopMenu {
 
 	public ProductsPageEvents clickProductsLink() {
 		Base.click(productsLink);
-		return new ProductsPageEvents();
+		return new ProductsPageEvents(driver);
 
 	}
 
 	public CartPageEvents clickCartLink() {
 		Base.click(cartLink);
-		return new CartPageEvents();
+		return new CartPageEvents(driver);
 
 	}
 
@@ -88,19 +90,19 @@ public class TopMenu {
 
 	public TestCasesEvents clickTestCasesLink() {
 		Base.click(testCasesLink);
-		return new TestCasesEvents();
+		return new TestCasesEvents(driver);
 
 	}
 
 	public VideoTutorialsEvents clickVideoTutorialsLink() {
 		Base.click(videoTutorialsLink);
-		return new VideoTutorialsEvents();
+		return new VideoTutorialsEvents(driver);
 
 	}
 
 	public ContactUsEvents clickContactUsLink() {
 		Base.click(contactUsLink);
-		return new ContactUsEvents();
+		return new ContactUsEvents(driver);
 
 	}
 

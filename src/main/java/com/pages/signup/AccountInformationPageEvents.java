@@ -12,8 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.base.Base;
+import com.page.TopMenu;
 
-public class AccountInformationPageEvents {
+public class AccountInformationPageEvents extends TopMenu{
 
 	WebDriver driver;
 	@FindBy(xpath = "//div[@class='login-form']/h2")
@@ -88,13 +89,15 @@ public class AccountInformationPageEvents {
 	WebElement createAccBtn;
 
 	public AccountInformationPageEvents(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	public void verifyTextPresent() {
 		String expected = "ENTER ACCOUNT INFORMATION";
-		Assert.assertEquals(verifyText.getText(), expected);
+		//Assert.assertEquals(verifyText.getText(), expected);
+		Base.soft.assertEquals(verifyText.getText(), expected);
 	}
 
 	public void selectTitle(String title) {

@@ -1,23 +1,14 @@
 package com.pages;
 
-import java.util.List;
-
-import org.apache.logging.log4j.core.util.internal.Status;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.base.Base;
 import com.page.TopMenu;
-import com.pages.signup.DeleteAccountPageEvents;
-import com.pages.signup.SignUpSignInPageEvents;
 
-import listeners.CustomListeners;
-
-public class HomePageEvents extends TopMenu {
+public class HomePageEvents extends TopMenu{
 
 	@FindBy(xpath = "//i[@class='fa fa-user']//ancestor::a")
 	WebElement navbarUserText;
@@ -32,7 +23,8 @@ public class HomePageEvents extends TopMenu {
 
 	public void verifyTitle() {
 		String expected = "Automation Exercise";
-		Assert.assertEquals(expected, driver.getTitle());
+		//Assert.assertEquals(expected, driver.getTitle());
+		Base.soft.assertEquals(expected, driver.getTitle());
 
 	}
 
@@ -41,9 +33,11 @@ public class HomePageEvents extends TopMenu {
 		System.out.println(text);
 		System.out.println(navbarUserText.getText());
 		if (navbarUserText.getText().contains(text)) {
-			Assert.assertTrue(true);
+			//Assert.assertTrue(true);
+			Base.soft.assertTrue(false);
 		} else {
-			Assert.assertTrue(false);
+			//Assert.assertTrue(false);
+			Base.soft.assertTrue(false);
 		}
 	}
 
