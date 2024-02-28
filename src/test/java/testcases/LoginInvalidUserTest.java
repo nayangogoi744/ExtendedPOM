@@ -14,11 +14,15 @@ public class LoginInvalidUserTest extends Base {
 	@Test(dataProvider = "myprovider")
 	public void loginwithInvalidCredentials(String invalidEmail, String invalidPassword) throws InterruptedException {
 		HomePageEvents hm = new HomePageEvents(getDriver());
-		hm.verifyTitle();
+		//hm.verifyTitle();
+		soft.get().assertEquals("Automation Exercise", getDriver().getTitle());
 		SignUpSignInPageEvents signuplogin = hm.clickSignUpLoginLink();
-		signuplogin.verifyLoginTextPresent();
+		//signuplogin.verifyLoginTextPresent();
+		soft.get().assertEquals("ALogin to your account",signuplogin.verifyloginText.getText());
 		signuplogin.login(invalidEmail, invalidPassword);
-		signuplogin.verifyLoginError();
+		//signuplogin.verifyLoginError();
+		soft.get().assertEquals("Your email or password is incorrect!",signuplogin.verifyloginText.getText());
+		soft.get().assertAll();
 	}
 
 	@DataProvider(name = "myprovider")

@@ -15,10 +15,10 @@ public class SignUpSignInPageEvents extends TopMenu{
 	WebDriver driver;
 
 	@FindBy(xpath = "//div[@class='login-form']//h2")
-	WebElement verifyloginText;
+	public WebElement verifyloginText;
 
 	@FindBy(xpath = "//div[@class='signup-form']//h2")
-	WebElement verifyusrSignUpText;
+	public WebElement verifyusrSignUpText;
 
 	@FindBy(xpath = "//input[@data-qa='signup-name']")
 	WebElement signupName;
@@ -42,10 +42,10 @@ public class SignUpSignInPageEvents extends TopMenu{
 	WebElement loginBtn;
 
 	@FindBy(xpath = "//form[@action='/signup']/p")
-	WebElement signupError;
+	public WebElement signupError;
 
 	@FindBy(xpath = "//form[@action='/login']/p")
-	WebElement loginError;
+	public WebElement loginError;
 
 	public SignUpSignInPageEvents(WebDriver driver) {
 		super(driver);
@@ -56,14 +56,14 @@ public class SignUpSignInPageEvents extends TopMenu{
 	public void verifySignUpTextPresent() {
 		String expected = "New User Signup!";
 		//Assert.assertEquals(verifyusrSignUpText.getText(), expected);
-		Base.soft.assertEquals(verifyusrSignUpText.getText(), expected);
+		//Base.soft.assertEquals(verifyusrSignUpText.getText(), expected);
 	}
 
 	public void verifyLoginTextPresent() {
 		String expected = "Login to your account";
 		String actual = verifyloginText.getText();
 		//Assert.assertEquals(actual, expected);
-		Base.soft.assertEquals(actual, expected);
+		//Base.soft.assertEquals(actual, expected);
 	}
 
 	public AccountInformationPageEvents signUp(String name, String email) {
@@ -80,13 +80,13 @@ public class SignUpSignInPageEvents extends TopMenu{
 	public void verifySignUpError() {
 		String expected = "Email Address already exist!";
 		//Assert.assertEquals(signupError.getText(), expected);
-		Base.soft.assertEquals(signupError.getText(), expected);
+		//Base.soft.assertEquals(signupError.getText(), expected);
 	}
 
 	public void verifyLoginError() {
 		String expected = "Your email or password is incorrect!";
 		//Assert.assertEquals(expected, loginError.getText());
-		Base.soft.assertEquals(expected, loginError.getText());
+		//Base.soft.assertEquals(expected, loginError.getText());
 
 	}
 

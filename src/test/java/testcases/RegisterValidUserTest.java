@@ -21,16 +21,23 @@ public class RegisterValidUserTest extends Base {
 			String day, String month, String year, String company, String firstaddress, String secondaddress,
 			String country, String state, String city, String zipcode, String mobile) throws InterruptedException {
 		HomePageEvents hm = new HomePageEvents(getDriver());
-		hm.verifyTitle();
+		//hm.verifyTitle();
+		soft.get().assertEquals("Automation Exercise", getDriver().getTitle());
 		SignUpSignInPageEvents signuplogin = hm.clickSignUpLoginLink();
-		signuplogin.verifySignUpTextPresent();
+		//signuplogin.verifySignUpTextPresent();
+		soft.get().assertEquals("New User Signup!" , signuplogin.verifyusrSignUpText.getText());
 		AccountInformationPageEvents accinfo = signuplogin.signUp(firstname, email);
-		accinfo.verifyTextPresent();
+		//accinfo.verifyTextPresent();
+		soft.get().assertEquals("ENTER ACCOUNT INFORMATION",accinfo.verifyText.getText() );
 		AccountCreatedPageEvents acccreated = accinfo.enterAccountInfo(title, password, day, month, year, firstname,
 				lastname, company, firstaddress, secondaddress, country, state, city, zipcode, mobile);
-		acccreated.verifyAccountCreated();
+		//acccreated.verifyAccountCreated();
+		soft.get().assertEquals("ACCOUNT CREATED!", acccreated.verifyTxt.getText());
 		hm = acccreated.clickContinue();
-		hm.verifyUserNamePresent(firstname);
+		//hm.verifyUserNamePresent(firstname);
+		soft.get().assertEquals("Logged in as "+firstname+"", hm.navbarUserText.getText());
+		soft.get().assertAll();
+		
 
 	}
 
@@ -41,12 +48,15 @@ public class RegisterValidUserTest extends Base {
 			throws InterruptedException {
 		HomePageEvents hm = new HomePageEvents(getDriver());
 		SignUpSignInPageEvents signuplogin = hm.clickSignUpLoginLink();
-		signuplogin.verifyLoginTextPresent();
+		//signuplogin.verifyLoginTextPresent();
+		soft.get().assertEquals("Login to your account",signuplogin.verifyloginText.getText());
 		hm = signuplogin.login(email, password);
-		hm.verifyUserNamePresent(firstname);
+		//hm.verifyUserNamePresent(firstname);
+		soft.get().assertEquals("Logged in as "+firstname+"",hm.navbarUserText.getText());
 		// DeleteAccountPageEvents deleteacc = hm.deleteAccount();
 		// deleteacc.verifyTextPresent();
 		// hm = deleteacc.clickContinue();
+		soft.get().assertAll();
 
 	}
 
@@ -56,12 +66,15 @@ public class RegisterValidUserTest extends Base {
 			String state, String city, String zipcode, String mobile) throws InterruptedException {
 		HomePageEvents hm = new HomePageEvents(getDriver());
 		SignUpSignInPageEvents signuplogin = hm.clickSignUpLoginLink();
-		signuplogin.verifyLoginTextPresent();
+		//signuplogin.verifyLoginTextPresent();
+		soft.get().assertEquals("Login to your account",signuplogin.verifyloginText.getText());
 		hm = signuplogin.login(email, password);
-		hm.verifyUserNamePresent(firstname);
+		//hm.verifyUserNamePresent(firstname);
+		soft.get().assertEquals("Logged in as "+firstname+"",hm.navbarUserText.getText());
 		SignUpSignInPageEvents su = hm.clickLogOutLink();
-		su.verifyLoginTextPresent();
-
+		//su.verifyLoginTextPresent();
+		soft.get().assertEquals("ALogin to your account",signuplogin.verifyloginText.getText());
+		soft.get().assertAll();
 	}
 
 	@Test(enabled = true, priority = 4, dataProvider = "myprovider")
@@ -70,11 +83,15 @@ public class RegisterValidUserTest extends Base {
 			String secondaddress, String country, String state, String city, String zipcode, String mobile)
 			throws InterruptedException {
 		HomePageEvents hm = new HomePageEvents(getDriver());
-		hm.verifyTitle();
+		//hm.verifyTitle();
+		soft.get().assertEquals("Automation Exercise", getDriver().getTitle());
 		SignUpSignInPageEvents signuplogin = hm.clickSignUpLoginLink();
-		signuplogin.verifySignUpTextPresent();
+		//signuplogin.verifySignUpTextPresent();
+		soft.get().assertEquals("New User Signup!" , signuplogin.verifyusrSignUpText.getText());
 		signuplogin.signUp(firstname, email);
-		signuplogin.verifySignUpError();
+		//signuplogin.verifySignUpError();
+		soft.get().assertEquals("HoEmail Address already exist",signuplogin.signupError.getText());
+		soft.get().assertAll();
 	}
 
 	@DataProvider(name = "myprovider")

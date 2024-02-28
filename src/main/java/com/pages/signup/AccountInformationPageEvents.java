@@ -18,7 +18,7 @@ public class AccountInformationPageEvents extends TopMenu{
 
 	WebDriver driver;
 	@FindBy(xpath = "//div[@class='login-form']/h2")
-	WebElement verifyText;
+	public WebElement verifyText;
 
 	// @FindBy(xpath="//div[@class='radio-inline']")
 	// WebElement radioBtn;
@@ -97,7 +97,7 @@ public class AccountInformationPageEvents extends TopMenu{
 	public void verifyTextPresent() {
 		String expected = "ENTER ACCOUNT INFORMATION";
 		//Assert.assertEquals(verifyText.getText(), expected);
-		Base.soft.assertEquals(verifyText.getText(), expected);
+		//Base.soft.assertEquals(verifyText.getText(), expected);
 	}
 
 	public void selectTitle(String title) {

@@ -14,7 +14,7 @@ public class AccountCreatedPageEvents extends TopMenu{
 
 	WebDriver driver;
 	@FindBy(xpath = "//h2/b")
-	WebElement verifyTxt;
+	public WebElement verifyTxt;
 
 	@FindBy(xpath = "//a[@data-qa='continue-button']")
 	WebElement continueBtn;
@@ -28,7 +28,7 @@ public class AccountCreatedPageEvents extends TopMenu{
 	public void verifyAccountCreated() {
 		String expected = "ACCOUNT CREATED!";
 		//Assert.assertEquals(verifyTxt.getText(), expected);
-		Base.soft.assertEquals(verifyTxt.getText(), expected);
+		//Base.soft.assertEquals(verifyTxt.getText(), expected);
 	}
 
 	public HomePageEvents clickContinue() {

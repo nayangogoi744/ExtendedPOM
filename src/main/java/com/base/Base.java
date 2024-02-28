@@ -15,8 +15,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
@@ -36,7 +38,7 @@ public class Base{
 	public static Logger log = LogManager.getLogger();
 	public static ExcelReader excel = new ExcelReader("\\src\\test\\resources\\com\\excel\\testdatasheet.xlsx");;
 	public static FileInputStream fis;
-	public static SoftAssert soft = new SoftAssert();
+	public ThreadLocal<SoftAssert> soft = new ThreadLocal<SoftAssert>();
 	
 	public void setDriver(WebDriver driver) {
 		this.driver.set(driver);
@@ -48,7 +50,8 @@ public class Base{
 
 	@BeforeSuite
 	public void initializeConfig() {
-
+		
+		
 		try {
 
 			// fis = new
@@ -70,7 +73,8 @@ public class Base{
 	@Parameters(value = { "browserName" })
 	@BeforeMethod
 	public void setup(String browserName) {
-
+		soft.set(new SoftAssert());
+		
 		if (browserName.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("incognito");
@@ -90,13 +94,17 @@ public class Base{
 
 	@AfterMethod
 	public void teardown() {
+		
 		getDriver().quit();
 	}
+		
+	
 
 	@AfterSuite
 	public void flush() {
+		
 		extent.flush();
-		soft.assertAll();
+		
 	
 		
 	}
